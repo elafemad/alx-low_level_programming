@@ -9,8 +9,8 @@
 int main(void)
 {
 	char elaf = 97;
-	
-	while(elaf < '{')
+
+	while (elaf < '{')
 	{
 	putchar(elaf);
 	elaf++;
