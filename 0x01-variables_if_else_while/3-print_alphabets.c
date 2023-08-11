@@ -9,6 +9,7 @@
 int main(void)
 {
 	char elaf = 97;
+	char elaf1 = 65;
 
 	while (elaf < '{')
 	{
@@ -16,12 +17,9 @@ int main(void)
 		elaf++;
 	}
 	do {
-		putchar('\n');
-	}
-	while (elaf < '90')
-	{
-		putchar(elaf);
-		elaf++;
-	}
+		putchar(elaf1);
+		elaf1++;
+	} while (elaf1 < 91);
+	putchar('\n');
 	return (0);
 }
