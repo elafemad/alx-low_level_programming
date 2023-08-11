@@ -8,4 +8,13 @@
 */
 int main(void)
 {
+	int lolla = 0;
 
+	while (lolla < 10)
+	{
+		printf("%d", lolla);
+		lolla++;
+	}
+	printf("\n");
+return (0);
+}
