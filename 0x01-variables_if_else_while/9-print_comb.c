@@ -12,6 +12,10 @@ int main(void)
 	while (lolla < 58)
 	{
 		putchar(lolla);
+		if (lolla == 57)
+		{
+			break;
+		}
 		putchar(',');
 		putchar(' ');
 		lolla++;
