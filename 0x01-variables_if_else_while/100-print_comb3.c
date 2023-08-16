@@ -1,33 +1,31 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
  * main - Entry point.
- * Description:program that prints combination.
- * Return: Always 0 (success).
+ * Description: This code for Elaf.
+ * Return: Alwayes 0 (Success).
  */
 int main(void)
 {
-	int z = 48;
-	int u = 48;
+	int i;
+	int j;
 
-	while (z < 58)
+	for (i = 48; i < 58; i++)
 	{
-		u = 48;
-		while (u < 58)
+		for (j = 49; j < 58; j++)
 		{
-			if (z != u && z < u)
+			if (i >= j)
 			{
-				putchar(z);
-				putchar(u);
-				if (z == 57 && u == 56)
-				{
-					break;
-				}
-				putchar(',');
-				putchar(' ');
+				continue;
 			}
-		   u++;
+			putchar(i);
+			putchar(j);
+			if (i == 56 && j == 57)
+			{
+				break;
+			}
+			putchar(',');
+			putchar(' ');
 		}
-	    z++;
 	}
 	putchar('\n');
 	return (0);
