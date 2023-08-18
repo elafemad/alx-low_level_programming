@@ -2,15 +2,14 @@
 /*
  * print_number - a function that prints an integer.
  * Discription : find intger
- * @h: an intger.
- * @m: an integer.
+ * @n: an integer.
  * Return : 0 .
  */
 void print_number(int n)
 {
-	unsigned int h = m;
+	unsigned int h = n;
 
-	if (m < 0)
+	if (n < 0)
 	{
 		_putchar('-');
 		h = -h;
