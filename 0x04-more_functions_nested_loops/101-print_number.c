@@ -3,7 +3,6 @@
  * print_number - a function that prints an integer.
  * Discription : find intger
  * @n: an integer.
- * Return : 0 .
  */
 void print_number(int n)
 {
