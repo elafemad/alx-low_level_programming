@@ -1,22 +1,22 @@
 #include "main.h"
-/*
+/**
  * print_number - a function that prints an integer.
  * Discription : find intger.
  * @n: an int
  */
 void print_number(int n)
 {
-	unsigned int h = n;
+	unsigned int num = n;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		h = -h;
+		num = -num;
 	}
-	if ((h / 10) > 0)
+	if ((num / 10) > 0)
 	{
-		print_number(h / 10);
+		print_number(num / 10);
 
-		_putchar((h % 10) + '0');
+		_putchar((num % 10) + '0');
 	}
 }
