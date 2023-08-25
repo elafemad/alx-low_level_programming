@@ -1,24 +1,18 @@
 #include "main.h"
 /**
- * *_strncpy- function that copy a string.
- * Description: function copy a string.
- * @dest: destination string.
- * @src:source string.
- * @n: an integer
+ * *string_toupper- function that change lower to upper.
+ * Description: function lower to upper.
+ * @src:input.
  * Return: pointer.
  */
-char *_strncpy(char *dest, char *src, int n)
+char *string_toupper(char *str)
 {
 	int i;
-	int j;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		dest[i] = '\0';
+		if (str[i] >= 97 && str[i] <= 122)
+			str[i] = str[i] - 32;
 	}
-	for (j = 0; j < n && src[j] != '\0'; j++)
-	{
-		dest[j] = src[j];
-	}
-	return (dest);
+	return (str);
 }
