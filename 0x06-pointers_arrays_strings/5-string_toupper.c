@@ -5,7 +5,7 @@
  * @src:input.
  * Return: pointer.
  */
-char *string_toupper(char *str)
+char *string_toupper(char *)
 {
 	int i;
 
