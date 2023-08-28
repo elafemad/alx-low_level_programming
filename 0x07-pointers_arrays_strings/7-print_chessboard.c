@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _chessboard- function print chessboard.
- * Description: fun prints chess
- * @a:input value
- * Return: void no return,
+ * print_chessboard - function print chessboard.
+ * Description:function prints chessboard
+ * @a:2D array
+ * Return:none
  */
 void print_chessboard(char (*a)[8])
 {
@@ -13,9 +13,8 @@ void print_chessboard(char (*a)[8])
 	{
 		for (j = 0; j < 8; i++)
 		{
-			printf("a[i][j]%c", a[i][j]);
+			_putchar(a[i][j]);
 		}
-		printf("\n");
+		_putchar('\n');
 	}
-	printf("\n");
 }
