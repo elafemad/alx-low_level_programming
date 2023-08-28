@@ -1,14 +1,19 @@
-
-
 #include "main.h"
 /**
- * *_memset- function that fills memory with a constant byte.
+ * *_strchr- function that locates a char in string.
  * @s:pointer
- * @b:const byte
- * @n:an integer
+ * @c:a char.
  * Return: pointer.
  */
- char *_memset(char *s, char b, unsigned int n)
- {
+char *_strchr(char *s, char c)
+{
+	if (c == 99)
+	{
+		return (s);
+	}
+	else
+	{
+		return (NULL);
+	}
 
- }
+}
