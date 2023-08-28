@@ -1,16 +1,23 @@
-
-
-
-
 #include "main.h"
+#include <math.h>
 /**
- * *_memset- function that fills memory with a constant byte.
- * @s:pointer
- * @b:const byte
- * @n:an integer
- * Return: pointer.
+ * print_diagsums- function print sum of diagonals of a square.
+ * Description: diagonals od square.
+ * @a:pointer of array
+ * @size: input
+ * Return: void no return,
  */
- char *_memset(char *s, char b, unsigned int n)
- {
+void print_diagsums(int *a, int size)
+{
 
- }
+	int i, sum1, sum2;
+
+	for (i =  0; i < size; i++)
+	{
+		sum1 += *(a + i * size + i);
+		sum2 += *(a + i * size + (size - i - 1));
+		{
+			printf("Sum of diagonal elemnts: %d, %d\n", sum1, sum2);
+		}
+	}
+}
