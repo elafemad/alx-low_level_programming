@@ -19,7 +19,7 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 	}
-	if (accept[k] == '\0')
+	if (accept[k] == s[j])
 	{
 		return (j);
 	}
