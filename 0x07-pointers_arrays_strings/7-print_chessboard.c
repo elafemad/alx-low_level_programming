@@ -1,15 +1,21 @@
-
-
-
 #include "main.h"
 /**
- * *_memset- function that fills memory with a constant byte.
- * @s:pointer
- * @b:const byte
- * @n:an integer
- * Return: pointer.
+ * _chessboard- function print chessboard.
+ * Description: fun prints chess
+ * @a:input value
+ * Return: void no return,
  */
- char *_memset(char *s, char b, unsigned int n)
- {
+void print_chessboard(char (*a)[8])
+{
+	int i, j;
 
- }
+	for (i =  0; i <= 8; i++)
+	{
+		for (j = 0; j < 8; i++)
+		{
+			printf("a[i][j]%c", a[i][j]);
+		}
+		printf("\n");
+	}
+	printf("\n");
+}
