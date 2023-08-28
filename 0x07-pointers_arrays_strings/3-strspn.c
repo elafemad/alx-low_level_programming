@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strspn- function that fills memory with a constant b
+ * _strspn- function that get length
  * @s:string to be searched
  * @accept:string contain char to match
  * Return: num.

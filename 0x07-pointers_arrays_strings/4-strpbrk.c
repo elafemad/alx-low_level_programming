@@ -1,15 +1,25 @@
-
-
-
 #include "main.h"
 /**
- * *_memset- function that fills memory with a constant byte.
- * @s:pointer
- * @b:const byte
- * @n:an integer
- * Return: pointer.
+ * _strpbrk- function that search a string for any set of bytes
+ * @s:string to be searched
+ * @accept:string contain char to match
+ * Return: num.
  */
- char *_memset(char *s, char b, unsigned int n)
- {
+char *_strpbrk(char *s, char *accept)
+{
+	int j, k;
+	char *p;
 
- }
+	for (j = 0; s[j] != '\0'; j++)
+	{
+		for (k = 0; accept[k] != s[j]; k++)
+		{
+			if (s[j] == accept[k])
+			{
+				p = &s[j];
+				return (p);
+			}
+		}
+	}
+	return (0);
+}
