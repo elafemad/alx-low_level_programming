@@ -3,7 +3,7 @@
  * main - entry point
  * @argc: number of arguments
  * @argv: array
- * Return: o if no num is passed, error is symbol is passed elase return the sum
+ * Return: o if no num is passed, error, elase return the sum
  */
 int main(int argc, char *argv[])
 {
