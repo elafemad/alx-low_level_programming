@@ -5,7 +5,5 @@
 
 int _putchar(char c);
 int _atoi(char *s);
-char *_strcat(char *dest, char *src);
-char *_strstr(char *haystack, char *needle);
-
+int mul(int a , int b);
 #endif /* MAIN_H */

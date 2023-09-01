@@ -1,22 +1,23 @@
 #include "main.h"
 /**
- * mul - multiply 2 int
  * main - entry point
- * @a: integer
- * @b:integer
- * @argc: integer
- * @argv: pointer
+ * @argc: number of arguments
+ * @argv: array
  * Return: intger
  */
-int mul(int a , int b)
-{
-	int x = a * b;
-	return (x);
-}
 int main(int argc, char *argv[])
-{	
-	int a, b;
+{
+	int a, b, mul;
 
-	mul(a, b);
-	printf("Enter the first number %d the second %d", ml(a, b));
-}
+	if (a <= 2)
+	{
+		printf("Error\n";
+				return (1);
+				}
+
+				a = atoi(argv[1]);
+				b = atoi(argv[2]);
+				mul = a * b;
+				printf(" %d\n", mul);
+				return (0);
+				}
