@@ -7,8 +7,12 @@
  */
 int main(int argc, char *argv[])
 {
+	int a = 0;
 
 	/**(void)argc;*/
-	printf("%s\n", argv[argc]);
+	while(a < argc)
+	{
+	printf("%s\n", argv[a]);
+	}
 	return (0);
 }
