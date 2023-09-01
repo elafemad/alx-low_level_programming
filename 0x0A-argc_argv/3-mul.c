@@ -7,17 +7,14 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, b, mul;
+	int mul;
 
-	if (a <= 2)
+	if (argc < 2 && argc > 2)
 	{
-		printf("Error\n";
-				return (1);
-				}
-
-				mul = atoi(argv[1]) * atoi(argv[2]);
-				printf(" %d\n", mul);
-			
-				return (0);
-				}
-
+		printf("Error\n");
+		return (1);
+	}
+	mul = _atoi(argv[1]) * _atoi(argv[2]);
+	printf("%d\n", mul);
+	return (0);
+}
