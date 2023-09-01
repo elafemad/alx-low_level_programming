@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - entry point
- * @argc: integer
+ * @argc: num of arg
  * @argv: pointer
  * Return: intger
  */
