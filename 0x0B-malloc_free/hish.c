@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; s2[i] != '\0';i++)
 	{}
 	size2 = i;
-	a = malloc((size1 * sizeof(char)) + (size2 * sizeof(char)));
+	a = malloc((size1 * sizeof(char)) + (size2 * sizeof(char))); 
 	if (a == NULL)
 	{
 		return (NULL);
@@ -44,5 +44,19 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	a[i] = '\0';
-	return (a);
+	return (a); 
+}
+int main(void)
+{
+	char *s;
+
+	s = str_concat("Betty ", "Holberton");
+	if (s == NULL)
+	{
+		printf("failed\n");
+		return (1);
+	}
+	printf("%s\n", s);
+	free(s);
+	return (0);
 }
