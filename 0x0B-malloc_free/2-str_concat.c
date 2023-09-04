@@ -1,37 +1,29 @@
 #include<string.h>
 #include<stdio.h>
-#include<stdlib.h>
+#include <stdlib.h>
 #include<stddef.h>
-/** 
- * *create_array - function that concatenates two strings.
+/**
+ * *str_concat - function that concatenates two strings.
  * @s1:pointer
  * @s2: pointer
  * Return: null, pointer.
- * */
+ */
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, size1,size2;
-	char *a;
+	int i, j;
+	char *a = malloc(strlen(s1) + strlen(s2) + 1);
 
-
+	if (a == NULL)
+	{
+		return (NULL);
+	}
 	if (s1 == NULL)
 	{
-		s1= "";
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
 		s2 = "";
-	}
-	for (i = 0; s1[i] != '\0';i++)
-	{}
-	size1 = i;
-	for (i = 0; s2[i] != '\0';i++)
-	{}
-	size2 = i;
-	a = malloc((size1 * sizeof(char)) + (size2 * sizeof(char)));
-	if (a == NULL)
-	{
-		return (NULL);
 	}
 	for (i = 0; s1[i] != '\0'; i++)
 	{
@@ -41,8 +33,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		a[i] = s2[j];
 		i++;
+		if (i == 14)
+		{
+			a[i + 1] = '\0';
+		}
 	}
-
-	a[i] = '\0';
 	return (a);
 }
