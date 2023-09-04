@@ -6,14 +6,17 @@
  */
 char *_strdup(char *str)
 {
-	int i = 0;
+	int i;
 	char *a;
 
-	a = malloc(i + 1 *  sizeof(char));
-	if (str == NULL || a == 0)
+	for (i = 0; str[i] != '\0'; i++)
+	{
+	}
+	if (str == NULL)
 	{
 		return (NULL);
 	}
+	a = malloc(i + 1 *  sizeof(char));
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		a[i] = str[i];
