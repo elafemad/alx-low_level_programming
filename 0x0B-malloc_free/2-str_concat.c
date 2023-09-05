@@ -1,13 +1,14 @@
+#include "main.h"
 #include<string.h>
 #include<stdio.h>
-#include <stdlib.h>
 #include<stddef.h>
-/**
- * *str_concat - function that concatenates two strings.
+#include<stdlib.h>
+/** 
+ * *create_array - function that concatenates two strings.
  * @s1:pointer
  * @s2: pointer
  * Return: null, pointer.
- */
+ * */
 char *str_concat(char *s1, char *s2)
 {
 	int i, j;
@@ -19,7 +20,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s1 == NULL)
 	{
-		s1 = "";
+		s1= "";
 	}
 	if (s2 == NULL)
 	{
@@ -33,10 +34,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		a[i] = s2[j];
 		i++;
-		if (i == 14)
+		if (i == j)
 		{
-			a[i + 1] = '\0';
+	a[i + 1] = '\0';
 		}
 	}
-	return (a);
+	return (a); 
 }

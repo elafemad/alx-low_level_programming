@@ -1,6 +1,6 @@
-
-
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "main.h"
 /** 
  * *create_array - creates an array of chars.
@@ -8,7 +8,7 @@
  * @c: char
  * Return: null, pointer.
  * */
-char *create_array(unsigned int size, char c)
+void free_grid(int **grid, int height)
 {
 
 }
