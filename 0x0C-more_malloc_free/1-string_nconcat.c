@@ -8,7 +8,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, j;
+	unsigned int i, j, k;
 	char *a;
 
 	if (s1 == NULL)
@@ -19,7 +19,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	a = malloc(strlen(s1) + strlen(s2) + 1);
+	if (n >= strlen(s2))
+	{
+		n = strlen(s2);
+	}
+	a = malloc(strlen(s1) + n + 1);
 	if (a == NULL)
 	{
 		return (NULL);
