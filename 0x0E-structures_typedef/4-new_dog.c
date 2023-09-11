@@ -7,12 +7,15 @@
  */
 int _strlen(char *str)
 {
-	int L = 0;
+	int i, length;
 
-	while (str)
-		L++;
+	length = 0;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		length++;
+	}
 
-	return (L);
+	return (length);
 }
 
 /**
@@ -26,10 +29,12 @@ char *_strcopy(char *dest, char *src)
 {
 	int i = 0;
 
-	for (; src[i] ; i++)
-		dest[i] = src[i];
-
-	dest[i] = '\0';
+	while (*(src + i) != '\0')
+	{
+		*(dest + i) = *(src + i);
+		i++;
+	}
+	*(dest + i) = '\0';
 	return (dest);
 }
 
