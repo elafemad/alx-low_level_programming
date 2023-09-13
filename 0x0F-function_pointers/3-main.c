@@ -1,16 +1,14 @@
 #include "3-calc.h"
-
 /**
  * main - check the code for Holberton School students.
  * @argc: argument count.
- * @argv: argument vector.
- *
+ * @argv: argument array.
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
 	int a, b;
-	int (*operation)(int, int);
+	int (*op)(int, int);
 
 	if (argc != 4)
 	{
@@ -24,9 +22,9 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	operation = get_op_func(argv[2]);
+	op = get_op_func(argv[2]);
 
-	if (operation == NULL)
+	if (op == NULL)
 	{
 		printf("Error\n");
 		exit(99);
@@ -35,6 +33,6 @@ int main(int argc, char *argv[])
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
-	printf("%d\n", operation(a, b));
+	printf("%d\n", op(a, b));
 	return (0);
 }
