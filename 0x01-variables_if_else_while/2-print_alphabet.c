@@ -8,12 +8,12 @@
 */
 int main(void)
 {
-	char elaf = 97;
+	char e = 97;
 
-	while (elaf < '{')
+	while (e < '{')
 	{
-	putchar(elaf);
-	elaf++;
+	putchar(e);
+	e++;
 	}
 	putchar('\n');
 	return (0);

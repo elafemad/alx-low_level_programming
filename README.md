@@ -1,1 +1,1 @@
- This is directory about learning C programming
+This directory is about learning C programming
