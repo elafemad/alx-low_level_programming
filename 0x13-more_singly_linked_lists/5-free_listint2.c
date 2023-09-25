@@ -1,17 +1,24 @@
 #include "lists.h"
 /**
- * free_listinit2 -function that frees a listint_t list.
- * @head: pointer.
- * Return: return nothing.
+ * free_listint2 - function that frees a listint_t list.
+ * @head: double pointer to the head of the list
+ *
+ * Return: void
  */
 void free_listint2(listint_t **head)
 {
-	listint_t *p;
+	listint_t *temp;
+
+	if (head == NULL)
+		return;
 
 	while (*head != NULL)
 	{
-		p = (*head)->next;
-		free(*head);
-		*head = p;
+		temp = *head;
+		*head = (*head)->next;
+		free(temp);
 	}
+
+	*head = NULL;
 }
+
