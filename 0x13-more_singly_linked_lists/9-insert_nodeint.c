@@ -2,7 +2,7 @@
 /**
  * insert_nodeint_at_index - fun that inserts a new node at a given position
  * @head: pointer to pointer.
- * idx: index.
+ * @idx: index.
  * @n: integer
  * Return: intger.
  */
@@ -11,7 +11,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	unsigned int i = 0;
 	listint_t *temp, *current, *lastnode;
 
-	if (*head == NULL )
+	if (*head == NULL)
 		return (NULL);
 
 	temp = *head;
