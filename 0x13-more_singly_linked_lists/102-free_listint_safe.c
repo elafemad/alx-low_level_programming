@@ -4,7 +4,6 @@
  * @h: pointer to head
  * Return:address
  */
-
 size_t free_listint_safe(listint_t **h)
 {
 	const listint_t *corrent = NULL;
