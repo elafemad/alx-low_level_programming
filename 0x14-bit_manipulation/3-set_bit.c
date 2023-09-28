@@ -1,11 +1,19 @@
-
 #include "main.h"
 /**
- * binarry_to_unit - func convert binary to unsigned int
- * @b: pointer
- * Return: Always 0.
+ * set_bet - func sets value of a bit to 1 at given index.
+ * @n: pointer.
+ * @index: index
+ * Return:1.
  */
-unsigned int binary_to_uint(const char *b)
+int set_bit(unsigned long int *n, unsigned int index)
 {
+	unsigned int i = 1;
+	if(n == 0 && index == 0)
+	{
+		return (-1);
+	}
+	i = i << index;
+	*n |
+	return (1);
 
 }
