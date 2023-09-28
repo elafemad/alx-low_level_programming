@@ -1,11 +1,15 @@
-
 #include "main.h"
 /**
- * binarry_to_unit - func convert binary to unsigned int
- * @b: pointer
- * Return: Always 0.
+ * get_bit - func return value of bit in a given index.
+ * @n: an intger
+ * @index: index
+ * Return: index.
  */
-unsigned int binary_to_uint(const char *b)
+int get_bit(unsigned long int n, unsigned int index)
 {
-
+	if (n == 0 && index == 0)
+	{
+		return (-1);
+	}
+	return ((n >> index) & 1);
 }
