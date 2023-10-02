@@ -7,11 +7,10 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;
-	ssize_t counter, r;
+	ssize_t fd, counter, r;
 	char *c;
 
-	c = malloc(sizeof(letters) * letters);
+	c = malloc(sizeof(char) * letters);
 	if (c == NULL)
 	{
 		return (0);
@@ -37,6 +36,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	counter = write(STDOUT_FILENO, c, r);
 	free(c);
-	close(*filename);
+	close(fd);
 	return (counter);
 }
