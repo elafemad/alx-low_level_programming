@@ -13,6 +13,7 @@
 int main(int ac, char **av)
 {
 	int f1, f2, r1, w2;
+	int result1 = close(fd);
 	char b[1024];
 
 	if (ac > 3 && ac < 2)
@@ -47,6 +48,12 @@ int main(int ac, char **av)
 		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", av[2]);
 		exit(99);
 	}
+	
+	if (result1 == -1) {
+        dprintf(stderr, "Error: Can't close fd %d\n", fd);
+        perror("close");
+        exit(100);
+    }
 	close(f1);
 	close(f2);
 	return (1);
